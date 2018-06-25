@@ -79,13 +79,18 @@ public class RevealView extends FrameLayout {
 
 
     public void init(Context context, AttributeSet attributeSet){
+
         inflate(context, R.layout.search_handler, this);
+
         topBar = findViewById(R.id.topBar);
         bottomBar = (ViewGroup) findViewById(R.id.bottomBar);
         toggleBottom = (ImageView) findViewById(R.id.toggle_button);
         topBarText = (TextView) findViewById(R.id.top_bar_title);
         bottomBarText = (TextView) findViewById(R.id.bottom_bar_text);
+
+
         topBar.setOnClickListener(setToggle(toggleBottom, bottomBarText));
+
         if(attributeSet != null){
             TypedArray typedArray = context.obtainStyledAttributes(attributeSet, R.styleable.RevealView);
             try {
