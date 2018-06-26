@@ -23,13 +23,6 @@
     </declare-styleable>
 
 
-<declare-styleable name="CustomToolBar">
 
-    <attr name="toolBarBackground" format="color"/>
-    <attr name="toolBarTextPrimaryColor" format="color" />
-    <attr name="isOptionMenuNeeded" format="boolean"/>
-
-
-</declare-styleable>
 
 </resources>
